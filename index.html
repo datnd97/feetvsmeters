@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    Square of <input type="text" id="input" oninput="calculate()"> is: <span id="result"></span>
+
+
+    <script>
+    
+    function calculate()
+    {
+        var input = document.getElementById('input').value;
+        var result = square(input);
+        document.getElementById('result').innerHTML = result;
+    }
+    function square(number)
+    {
+        var result = number * number ;
+        return result;
+    }
+    
+    
+    </script>
+</body>
+</html>

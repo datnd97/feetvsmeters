@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let foot1 = 1;
+    let meters1 = footToMeter(foot1);
+    
+    let foot2 = 9;
+    let meters2 = footToMeter(foot2);
+
+    let meter1 = 25;
+    let feet1 = meterToFoot(meter1);
+
+
+
+
+        console.log(meters1);
+        console.log(meters2);
+        console.log(feet1);
+
+
+
+
+
+    function footToMeter(foot)
+    {   
+        let meter;
+        meter = 0.305 * foot;
+        return meter;
+    }
+    function meterToFoot(meter)
+    {
+        let foot;
+        foot = meter * 3.279 ;
+        return foot;
+    }
+    
+    </script>
+</body>
+</html>
